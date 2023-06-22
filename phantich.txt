@@ -1,0 +1,133 @@
+Dựa trên việc bạn đã sắp xếp các cột dữ liệu, mô hình hình sao của bạn sẽ như sau:
+
+1. **Bảng Fact (Sales)**: Chứa các thông tin về sự kiện cụ thể liên quan đến việc bán hàng. 
+
+Các trường dữ liệu bao gồm: 
+
+- id
+- master_id
+- sku
+- all_time_quantity_sold
+- quantity_sold
+- rating_average
+- review_count
+- original_price
+- price
+- discount
+- discount_rate
+
+2. **Bảng Dimension**:
+
+- **Customer**: Cung cấp thông tin chi tiết về khách hàng.
+
+   Trường dữ liệu: 
+
+   - customer_id
+   - customer_name
+
+- **Product**: Cung cấp thông tin chi tiết về sản phẩm.
+
+   Trường dữ liệu:
+
+   - sku
+   - name
+   - brand
+   - categories
+   - short_description
+   - product_links
+
+- **Time**: Cung cấp thông tin chi tiết về thời gian liên quan đến việc bán hàng.
+
+   Trường dữ liệu:
+
+   - created_at
+   - purchased_at
+   - day_ago_created
+
+- **Seller**: Cung cấp thông tin chi tiết về người bán.
+
+   Trường dữ liệu:
+
+   - current_seller
+   - other_sellers
+   - seller_specifications
+   - is_seller_in_chat_whitelist
+
+- **Reviews**: Cung cấp thông tin chi tiết về đánh giá của khách hàng cho sản phẩm.
+
+   Trường dữ liệu:
+
+   - id
+   - title
+   - content
+   - thank_count
+   - rating
+
+- **Inventory**: Cung cấp thông tin chi tiết về lượng hàng tồn kho.
+
+   Trường dữ liệu:
+
+   - inventory
+   - inventory_status
+   - inventory_type
+
+Các bảng này sẽ liên kết với nhau thông qua các trường dữ liệu chung, tạo thành một mô hình hình sao. Mô hình này cho phép bạn thực hiện các truy vấn phức tạp và phân tích dữ liệu một cách hiệu quả hơn.
+
+Dưới đây là một số thông tin chi tiết về các thuộc tính mà bạn đã liệt kê:
+
+1. **Bảng Fact (Sales)**:
+
+   - id: Đây là ID duy nhất của mỗi sự kiện bán hàng.
+   - master_id: ID duy nhất tham chiếu đến một thực thể lớn hơn mà sự kiện bán hàng này thuộc về.
+   - sku: Mã hàng duy nhất đại diện cho một sản phẩm cụ thể.
+   - all_time_quantity_sold: Tổng số lượng sản phẩm đã bán ra từ trước đến nay.
+   - quantity_sold: Số lượng sản phẩm được bán ra trong một thời gian cụ thể.
+   - rating_average: Đánh giá trung bình của sản phẩm từ tất cả người dùng.
+   - review_count: Tổng số lượt đánh giá của sản phẩm.
+   - original_price: Giá gốc của sản phẩm.
+   - price: Giá bán của sản phẩm (sau khi đã áp dụng bất kỳ giảm giá nào).
+   - discount: Mức giảm giá được áp dụng lên sản phẩm.
+   - discount_rate: Tỷ lệ phần trăm của mức giảm giá.
+
+2. **Bảng Dimension**:
+
+   - **Customer**:
+     - customer_id: ID duy nhất của khách hàng.
+     - customer_name: Tên của khách hàng.
+
+   - **Product**:
+     - sku: Mã hàng duy nhất đại diện cho một sản phẩm cụ thể.
+     - name: Tên của sản phẩm.
+     - brand: Thương hiệu của sản phẩm.
+     - categories: Các loại mà sản phẩm thuộc về.
+     - description: Mô tả chi tiết về sản phẩm.
+     - short_description: Mô tả ngắn gọn về sản phẩm.
+     - specifications: Thông số kỹ thuật của sản phẩm.
+     - product_links: Liên kết đến sản phẩm.
+
+   - **Time**:
+     - created_at: Thời gian mà sự kiện bán hàng được tạo.
+     - purchased_at: Thời gian mà sản phẩm được mua.
+     - day_ago_created: Số ngày trước khi sự kiện bán hàng được tạo.
+
+   - **Seller**:
+     - current_seller: Người bán hiện tại của sản phẩm.
+     - other_sellers: Các người bán khác của sản phẩm.
+     - seller_specifications: Thông tin chi tiết về người bán.
+     - is_seller_in_chat_whitelist: Cho biết người bán có nằm trong danh sách trắng cho trò chuyện hay không.
+
+   - **Reviews**:
+     - id: ID duy nhất của đánh giá.
+     - title: Tiêu đề của đánh giá.
+     - content: Nội dung của đánh giá.
+     - thank_count: Số lượng lời cảm ơn mà đánh giá nhận được.
+     - rating
+
+: Đánh giá của sản phẩm.
+
+   - **Inventory**:
+     - inventory: Số lượng sản phẩm hiện có trong kho.
+     - inventory_status: Trạng thái của kho hàng (ví dụ: có sẵn, hết hàng, sắp hết).
+     - inventory_type: Loại hàng tồn kho (ví dụ: hàng mới, hàng đã sử dụng, hàng tái chế).
+
+Lưu ý: Những giải thích trên đây chỉ là giả định dựa trên tên của các thuộc tính. Trong thực tế, ý nghĩa cụ thể của mỗi thuộc tính có thể khác nhau dựa trên ngữ cảnh sử dụng cụ thể trong nguồn dữ liệu của bạn.
