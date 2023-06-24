@@ -26,7 +26,13 @@
 
 <p align=" justify">
 - Crawl sản phẩm dựa vào list category, ở đây tôi đã crawl 5 danh mục bao gồm: "dien-thoai-may-tinh-bang, lam-dep-suc-khoe, nha-cua-doi-song, thiet-bi-kts-phu-kien-so,dong-ho-va-trang-suc" được nhập từ file Categories.txt từ những danh mục này trích xuất ra các product_id, để mở rộng sản phẩm lấy được thêm sort để lấy tất cả sản phẩm bảo gồm: default,top_seller , newest, price_asc, price_desc bao gồm sắp xếp mặc định, bán chạy,... tuy nhiên trong quá trình craw thì các product_id trùng -> đã xử lý id trùng trước khi lưu vào mysql,... tổng cộng crawl được 36285 product_id
-
+</p>
+</p>
+<p align="center">
+  <img src="picture/picture/craw_id.png" alt="Star Schema Diagram">
+  <br>
+  <em>Xử lý đa luồng khi crawl để tăng tốc</em>
+</p>
 </p>
 </p>
 <p align="center">
