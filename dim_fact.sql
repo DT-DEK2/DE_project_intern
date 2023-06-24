@@ -5,8 +5,8 @@ CREATE TABLE `Dim_Brand` (
 
 CREATE TABLE `Dim_Category` (
   `Category_id` int PRIMARY KEY,
-  `Breadcrumb_name` string,
-  `Categories_name` string
+  `breadcrumb_category_id` string,
+  `breadcrumb_name` string
 );
 
 CREATE TABLE `Dim_Product` (
@@ -16,7 +16,7 @@ CREATE TABLE `Dim_Product` (
   `Description_short` string,
   `Day_ago_created` float,
   `Fulfillment_type` string,
-  `Product_virtual_type` string
+  `Inventory_status` string
 );
 
 CREATE TABLE `Fact_Sales` (
