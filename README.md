@@ -82,6 +82,7 @@ Vì hạn chế về dữ liệu crawl được nên tôi chỉ có thể xây d
   <br>
   <em>Dữ liệu sau khi được đẩy vào dim_category</em>
 </p>
+
 ## Cài đặt và hướng dẫn sử dụng:
 - Cài đặt các thư viện tenacity, sqlalchemy,... trước khi khởi chạy chương trình.
 - Thay đổi địa chỉ thư mục Categories.txt, mặc định phải tạo theo đường dẫn ./Data/Categories.txt
@@ -89,8 +90,6 @@ Vì hạn chế về dữ liệu crawl được nên tôi chỉ có thể xây d
 - Thay đổi tham số cấu hình MySQL phù hợp.
 - Chạy file Craw_product.ipynb: Chương trình sẽ tự động tạo bảng, crawl product_id, product tiền xử lý dữ liệu trước khi lưu vào database
 - Chạy file datawarehouse.ipynb: Để thực hiện quá trình connect, ETL,....
-
-
 
 ## Nhận xét: 
 <p align="justify">
