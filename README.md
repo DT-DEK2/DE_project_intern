@@ -46,10 +46,11 @@
 <p align="center">
   <img src="picture/data_save_mysql.png" alt="Star Schema Diagram">
   <br>
-  <em>Thông tin 36285 product từ 5 danh mục </em>
+  <em>Thông tin 36285 product từ 5 danh mục được lưu vào bảng tạm thời</em>
 </p>
 <p align=" justify">
-# Mô tả quá trình Phân cấp dữ liệu và xây dựng Datawarehouse.
+
+## Mô tả quá trình Phân cấp dữ liệu và xây dựng Datawarehouse.
 <p align="justify">
 Vì hạn chế về dữ liệu crawl được nên tôi chỉ có thể xây dựng một mô hình datawarehouse theo cấu trúc Star Schema trong khả năng bao gồm 1 bảng fact: Fact_sales và 3 bản dim bao gồm Dim_Product, Dim_Brand, Dim_Category như sau:
 </p>
@@ -72,11 +73,15 @@ Vì hạn chế về dữ liệu crawl được nên tôi chỉ có thể xây d
 </p>
 
 <p align="center">
-  <img src="picture/dim_category.png" alt="Star Schema Diagram">
+  <img src="picture/dim_brand.png" alt="Star Schema Diagram">
   <br>
   <em>Dữ liệu sau khi được đẩy vào dim_brand</em>
 </p>
-
+<p align="center">
+  <img src="picture/dim_category.png" alt="Star Schema Diagram">
+  <br>
+  <em>Dữ liệu sau khi được đẩy vào dim_category</em>
+</p>
 ## Cài đặt và hướng dẫn sử dụng:
 - Cài đặt các thư viện tenacity, sqlalchemy,... trước khi khởi chạy chương trình.
 - Thay đổi địa chỉ thư mục Categories.txt, mặc định phải tạo theo đường dẫn ./Data/Categories.txt
