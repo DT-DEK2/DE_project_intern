@@ -29,7 +29,7 @@
 </p>
 </p>
 <p align="center">
-  <img src="picture/picture/craw_id.png" alt="Star Schema Diagram">
+  <img src="picture/craw_id.png" alt="Star Schema Diagram">
   <br>
   <em>Xử lý đa luồng khi crawl để tăng tốc</em>
 </p>
