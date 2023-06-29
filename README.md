@@ -10,7 +10,7 @@
 
 ## Giới thiệu
 <p align=" justify">
-- Đây là dự án được thiết kế và thực hiện để phục vụ cho vòng phỏng vấn vị trí Intern Data Engineer tại công ty DataGenius. Project này, tôi sử dụng API của tiki để xây dựng pipeline stream (luồng dữ liệu trực tiếp để crawl và đẩy vào mysql) được mô tả như sau: Từ list category là danh sách người dùng muốn thu thập dữ liệu từ tiki sau đó tiến hành crawl product_id và thông tin chi tiết mỗi sản phẩm, mỗi quá trình đều được tiền xử lý xoá các bản ghi trùng lặp trước khi đẩy vào database. Sau khi có dữ liệu tiến hành phân cấp dữ liệu theo cấu trúc Star Schema (lược đồ hình sao).
+- Trong Project này tôi sử dụng API của tiki để xây dựng pipeline stream (luồng dữ liệu trực tiếp để crawl và đẩy vào mysql) được mô tả như sau: Từ list category là danh sách người dùng muốn thu thập dữ liệu từ tiki sau đó tiến hành crawl product_id và thông tin chi tiết mỗi sản phẩm, mỗi quá trình đều được tiền xử lý xoá các bản ghi trùng lặp trước khi đẩy vào database. Sau khi có dữ liệu tiến hành phân cấp dữ liệu theo cấu trúc Star Schema (lược đồ hình sao).
 </p>
 <p>
 - Công nghệ và thư viện sử dụng: Python, MySQL, </p>
