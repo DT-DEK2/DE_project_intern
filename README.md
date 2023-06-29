@@ -97,9 +97,4 @@ Vì hạn chế về dữ liệu crawl được nên tôi chỉ có thể xây d
 - Chạy file Craw_product.ipynb: Chương trình sẽ tự động tạo bảng, crawl product_id, product tiền xử lý dữ liệu trước khi lưu vào database
 - Chạy file datawarehouse.ipynb: Để thực hiện quá trình connect, ETL,....
 
-## Nhận xét: 
-<p align="justify">
-- Thông qua bài kiểm tra, tôi nhận thấy bài test khá thú vị và tôi đã học được rất nhiều điều từ dự án này, tuy nhiên còn một số vấn đề tôi chưa xử lý được, tôi hi vọng trong tương lai sẽ áp dụng các công cụ như Apache NiFi, Talend, hay StreamSets để đưa dữ liệu vào DW mà sử dụng trực tiếp python vì thời gian gấp rút cũng như với lượng database nhỏ nên tôi áp dụng luôn python. Hi vọng nếu được làm việc với công ty tôi sẽ cố gắng học hỏi và hoàn thiện bản thân hơn. Qua đây, tôi cũng trân trọng cảm ơn phía công ty đã giao project khá thú vị này cho tôi.
-</p>
-
 
