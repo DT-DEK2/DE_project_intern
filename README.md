@@ -1,6 +1,6 @@
 <h1 align="center">Tiki Data Scraping and Datawarehouse Building Project
 </h1>
-<p align="center"><i>Nguyễn Đạt - Project intern tại DataGenius</i></p>
+<p align="center"><i>Project Scrape Data</i></p>
 <p align=" justify">
 
 - Người thực hiện: Nguyễn Đạt
